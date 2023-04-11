@@ -1,0 +1,127 @@
+{
+  "main": {
+    "id": "739dc1f5a45114de",
+    "type": "split",
+    "children": [
+      {
+        "id": "d40d418a763eaa79",
+        "type": "split",
+        "children": [
+          {
+            "id": "e12ce1f30738f280",
+            "type": "leaf",
+            "dimension": 78.14207650273224,
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "0e0fcaac2fe242f2",
+            "type": "leaf",
+            "dimension": 21.85792349726776,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Iterator/Collection/List/ArrayList和LinkedList比较.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1ad4cbb8ac070e5b",
+    "type": "split",
+    "children": [
+      {
+        "id": "10fc2e620eaf4111",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "401be7b450f24198",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c3df731248f7c6a0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8c0f21d0fc5251a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7bef90bf870e6a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c25b94ab19b00c8d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a82f452a5db042d1",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "e12ce1f30738f280",
+  "lastOpenFiles": [
+    "Pasted image 20220106110254.png",
+    "Iterator/Collection/List/ArrayList和LinkedList比较.md",
+    "Iterator/Collection/Set/Set.md",
+    "Iterator/Collection/Set/HashSet.md",
+    "Iterator/Collection/Collection.md",
+    "Iterator/Collection/Set/LinkedHashSet.md",
+    "Iterator/Collection/List/ArrayList.md",
+    "Iterator/Collection/List/LinkedList.md",
+    "Iterator/Collection/List/Vector.md",
+    "Iterator/Map/Map.md"
+  ]
+}

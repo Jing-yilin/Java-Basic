@@ -1,0 +1,58 @@
+-- 创建满汉楼的数据库
+create database mhl;
+-- 使用 mhl
+use mhl;
+-- 创建表 employee 表
+create table employee (
+    `id` int primary key auto_increment, #自增
+    `empId` varchar(50) unique not null default '', #员工号
+    `pwd` char(32) not null default '', #密码m5
+    `name` varchar(50) not null default '', #姓名
+    `job` varchar(50) not null default '' #岗位
+) charset =utf8;
+
+--  添加测试数据
+insert into employee values (null, '6668612', md5('123456'), 'Yoshiki', '经理');
+insert into employee values (null, '6668613', md5('123456'), 'Hide', '服务员');
+insert into employee values (null, '6668614', md5('123456'), 'Toshi', '收银员');
+insert into employee values (null, '6668615', md5('123456'), '景风眠', '经理');
+insert into employee values (null, '111111', md5('123456'), '景小林', '经理');
+
+-- 创建表 diningTable 表
+create table diningTable (
+    id int primary key auto_increment, #id自增
+    state varchar(20) not null default '', #餐桌状态
+    orderName varchar(50) not null default '', #预订人的姓名
+    orderTel varchar(20) not null default '' #预订人的电话
+) charset=utf8;
+-- 添加餐桌
+insert into diningTable values (null, '空', '', '');
+insert into diningTable values (null, '空', '', '');
+insert into diningTable values (null, '空', '', '');
+
+-- 创建菜品表 menu 表
+create table menu (
+     id int primary key auto_increment, #id自增
+     name varchar(50) not null default '', #菜品名
+     type varchar(50) not null default '', #菜品类别
+     price double not null default 0
+) charset = utf8;
+
+insert into menu values (null, '八宝饭', '主食', 10);
+insert into menu values (null, '叉烧包', '主食', 20);
+insert into menu values (null, '宫保鸡丁', '热菜', 30);
+insert into menu values (null, '山药拨鱼', '凉菜', 10);
+insert into menu values (null, '银丝卷', '甜食', 10);
+insert into menu values (null, '水煮鱼', '热菜', 10);
+
+-- 创建账单表 bill 表
+create table bill (
+      id int primary key auto_increment,# 自增住建
+      billId varchar(50) not null default '', #账单号可以按照自己规则生成UUID
+      menuId int not null default 0,#菜品的编号，也可以使用外键
+      nums int not null default 0,#份数
+      money double not null default 0,#金额
+      diningTableId int not null default 0,#餐桌
+      billDate datetime not null , #订餐日期
+      state varchar(50) not null default '' # 状态 '未结账' ，'已经结账', '挂单'
+)charset=utf8;

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <!--数据库源名称代表连接池-->
+    <named-config name="hsp">
+        <!-- 使用默认的配置读取连接池对象-->
+        <!--  连接参数 -->
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://124.222.234.99:3306/jyl_test</property>
+        <property name="user">root</property>
+        <property name="password">H692610bb0603070!</property>
+
+        <!-- 连接池参数 -->
+        <!--每次增长的连接数-->
+        <property name="acquireIncrement">5</property>
+        <!-- 初始连接数 -->
+        <property name="initialPoolSize">10</property>
+        <!--最小连接数-->
+        <property name="minPoolSize">5</property>
+        <!-- 最大连接数 -->
+        <property name="maxPoolSize">10</property>
+
+        <!--可连接的最多的命令对象数-->
+        <property name="maxStatements">5</property>
+
+        <!--每个连接对象可连接的最多的命令对象数-->
+        <property name="maxStatementsPerConnection">2</property>
+    </named-config>
+</c3p0-config>
